@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+:root {
+    --poppins: 'Poppins', san-serif;
+    --lato: 'Lato', san-serif;
+    --raleway: 'Raleway', san-serif;
+    --roboto: 'Roboto', san-serif;
+    --montserrat: 'Montserrat', san-serif;
+    --merriweather: 'Merriweather', san-serif;
+
+    --light: #D3D3D3;
+    --white: #fff;
+    --green: #228B22;
+    --midgreen: #0b6623;
+    --darkgreen: #013220;
+    --lightgreen: #acd8a7;
+    --palegreen: #D9E6D9; 
+    --lightgreengray: #C2D9C2;
+    --mutedgreen: #C8D6C8;
+    --sage: #bcecac;
+    --blue: #00b4d8;
+    --lightblue:#add8e6;
+    --grey: #eee;
+    --medgrey: #D7D7D7;
+    --lightgrey: #F5F5F5;
+    --dark-grey: #aaaaaa;
+    --dark: #342e37;
+    --red: #db5040;
+    --light-red: #ffa0a0;
+    --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #fd7238;
+    --light-orange: #ffe0d3;
+    --black: var(--black);
+}
+
+
+body {
+    background-color: var(--light);
+    color: var(--black);
+    min-height: 100vh;
+    font-family: var(--poppins);
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    align-items: auto;
+}
+
+.blob {
+    background-color: var(--green);
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    bottom: -200px;
+    right: -100px;
+    transform: rotate(45deg);
+    border-radius: 30% 0 0 30%;
+    z-index: 0;
+}
+
+.container {
+    background-color: var(--grey);
+    padding: 2rem;
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    z-index: 1;
+    width: auto;
+    height: auto;
+    transform: scale(0.8); /* Scale down the container and its contents */
+    font-size: 0.8em; /* Reduce font size for better readability */
+}
+
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h3 {
+    align-items: center;
+    color: var(--green);
+    text-align: center;
+}
+
+.announcement {
+    max-width: auto;
+}
+
+.announcement-time {
+    color: var(--midgreen);
+    font-size: .9rem;
+    text-align: right; /* Add this line */
+  }
+
+.announcement-item {
+    background-color: var(--palegreen);
+    padding: 1rem 1.25rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    row-gap: 10px;
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+.announcement-items.hide {
+    display: none;
+}
+
+.announcement-items h2 {
+    font-size: 1.15rem;
+}
+
+.announcement-items .dots {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: -5px;
+    right: 25px
+}
+
+.announcement-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+  }
+  
+  .announcement-items .dots {
+    grid-column: 2; /* Assign the dots to the second column */
+  }
+
+.announcement-item .avatar-info {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+
+.announcement-item .avatar-info img {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--dark-grey);
+    border-radius: 50%;
+  }
+
+.announcement-item .avatar-info .avatar-name {
+    color: var(--green);
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.announcement-item .announcement-time {
+    color: var(--midgreen);
+    font-size: .9rem;
+}
+
+button {
+    color: #fff;
+    cursor: pointer;
+    background-color: #4a9bff;
+    font-weight: bold;
+    padding: .75rem .75rem;
+    width: max-content;
+    align-self: center;
+    border-radius: .25rem;
+    border: 0;
+}
+
+button:hover {
+    background-color: #6eafff;
+}
+
+#dismiss-all-btn {
+    margin-top: 12rem;
+  }
+  
+  #dismiss-all-btn.hidden {
+    display: none;
+  }
+  
+  #reset-btn {
+    display: none;
+  }
+  
+  #reset-btn.show {
+    display: block;
+    margin-top: 6rem;
+  }
+
+#center {
+    display: grid;
+    place-items: left;
+    align-items: center;
+  }

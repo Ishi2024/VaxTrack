@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+}
+
+:root {
+    --poppins: 'Poppins', san-serif;
+    --lato: 'Lato', san-serif;
+    --raleway: 'Raleway', san-serif;
+    --roboto: 'Roboto', san-serif;
+    --montserrat: 'Montserrat', san-serif;
+    --merriweather: 'Merriweather', san-serif;
+
+    --light: #D3D3D3;
+    --white: #fff;
+    --green: #228B22;
+    --darkgreen: #013220;
+    --lightgreen: #acd8a7;
+    --palegreen: #D9E6D9; 
+    --lightgreengray: #C2D9C2;
+    --mutedgreen: #C8D6C8;
+    --sage: #bcecac;
+    --blue: #00b4d8;
+    --lightblue:#add8e6;
+    --grey: #eee;
+    --medgrey: #D7D7D7;
+    --lightgrey: #F5F5F5;
+    --dark-grey: #aaaaaa;
+    --dark: #342e37;
+    --red: #db5040;
+    --light-red: #ffa0a0;
+    --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #fd7238;
+    --light-orange: #ffe0d3;
+    --black: var(--black);
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/bglogin5.jpg);
+    background-size: cover;
+    background-position: auto;
+    background-repeat: no-repeat;
+    /* Additional considerations */
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+  }
+
+  .contact .content {
+    max-width: 1000px;
+    text-align: left;
+  }
+
+  .contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--black);
+    text-align: center;
+    text-shadow: 1px 1px 0 var(--palegreen), -1px -1px 0 var(--palegreen), 1px -1px 0 var(--palegreen), -1px 1px 0 var(--palegreen);
+  }
+
+  .contact .content p {
+    font-weight: 300;
+    font-size: larger;
+    color: var(--black);
+    text-align: left;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+  }
+
+  .container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+
+  .container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: var(--darkgreen);
+    flex-direction: column;
+    font-weight: 300;
+  }
+
+  .container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: var(--green);
+  }
+
+  .contactForm {
+    width: 70%;
+    padding: 40px;
+    background: var(--palegreen);
+    border-radius: 10px;
+  }
+
+  .contactInfo {
+    width: 40%;
+    padding: 40px;
+    background: var(--palegreen);
+    border-radius: 10px;
+  }
+
+  /* .contactInfo {
+    width: 40%;
+    padding: 40px;
+    background: var(--palegreen);
+    background: linear-gradient(to bottom, var(--light), rgba(255, 255, 255, 0.2));
+  } */
+
+    .contactForm h2 {
+      font-size: 30px;
+      color: var(--black);
+      font-weight: 500;
+    }
+
+    .contactForm .inputBox {
+      position: relative;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .contactForm .inputBox .input,
+    .contactForm .inputBox .textarea {
+      width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid var(--black);
+      outline: none;
+      resize: none;
+    }
+
+    .inputBox .input:hover {
+      background-color: var(--lightgreen);
+      cursor: pointer;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      transform: translateY(-2px); /* Move the button slightly upwards */
+      transition: transform 0.2s ease-in-out; /* Smooth transition effect */
+  }
+    
+    .contactForm .inputBox span {
+      position: absolute;
+      left: 0;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      pointer-events: none;
+      transition: 0.5s;
+      color: var(--light);
+    }
+
+    .contactForm .inputBox input:focus ~ span,
+    .contactForm .inputBox input:valid ~ span,
+    .contactForm .inputBox textarea:focus ~ span,
+    .contactForm .inputBox textarea:valid ~ span
+     {
+      color: var(--green);
+      font-size: 12px;
+      transform: translateY(-20px);
+    }
+
+    .contactForm .inputBox input [type="submit"] {
+      width: 100px;
+      background: var(--lightgreen);
+      color: var(--white);
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    @media (max-width: 991px)
+    {
+      .contact {
+        padding: 50px;
+      }
+      .container {
+        flex-direction: column;
+      }
+      .container .contactInfo {
+        margin-bottom: 40px;
+      }
+      .container .contactInfo, 
+      .contactForm {
+        width: 100%;
+      }
+    }
+
+    /*viewports*/
+
+@media screen and (max-width: 768px) {
+  /*  #sidebar {
+        width: 200px;
+    } - dont apply these they work on specific viewport*/
+
+    #content {
+        width: calc(100% - 60px);
+        /* left: 200px; - dont apply these they work on specific viewport*/
+    }
+    
+    #content nav .nav-link {
+        display: none;
+    }
+}
+
+
+
+@media screen  and (max-width: 576px) {
+    #content nav form .form-input input {
+        display: none;
+    }
+    #content nav form .form-input button {
+        width: auto;
+        height: auto;
+        background: transparent;
+        border-radius: none;
+        color: var(--dark);
+    }
+
+    #content nav form.show .form-input input {
+        display: block;
+        width: 100%;
+    }
+    #content nav form.show .form-input button {
+        width: 36px;
+        height: 100%;
+        border-radius: 0 36px 36px 0;
+        color: var(--light);
+        background: var(--red);
+    }
+
+    #content nav form.show ~ .notification,
+    #content nav form.show ~ .profile {
+        display: none;
+        
+    }
+
+    #content main .box-info {
+        grid-template-columns: 1fr;
+    }
+
+    #content main .table-data .head {
+        min-width: 420px;
+    }
+
+    #content main .table-data .order table {
+        min-width: 420px;
+    }
+
+    #content main .table-data .todo .todo-list {
+        min-width: 420px;
+    }
+
+}
+
+
+/*back button */
+
+.center-button {
+  position: fixed;
+  bottom: 20px; /* Adjust the bottom margin as needed */
+  right: 620px; /* Adjust the right margin as needed */
+}

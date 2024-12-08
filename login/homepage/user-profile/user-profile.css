@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+:root {
+    --poppins: 'Poppins', san-serif;
+    --lato: 'Lato', san-serif;
+    --raleway: 'Raleway', san-serif;
+    --roboto: 'Roboto', san-serif;
+    --montserrat: 'Montserrat', san-serif;
+    --merriweather: 'Merriweather', san-serif;
+
+    --light: #D3D3D3;
+    --white: #fff;
+    --green: #228B22;
+    --midgreen: #0b6623;
+    --darkgreen: #013220;
+    --lightgreen: #acd8a7;
+    --palegreen: #D9E6D9; 
+    --lightgreengray: #C2D9C2;
+    --mutedgreen: #C8D6C8;
+    --sage: #bcecac;
+    --blue: #00b4d8;
+    --lightblue:#add8e6;
+    --grey: #eee;
+    --medgrey: #D7D7D7;
+    --lightgrey: #F5F5F5;
+    --dark-grey: #aaaaaa;
+    --dark: #342e37;
+    --red: #db5040;
+    --light-red: #ffa0a0;
+    --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #fd7238;
+    --light-orange: #ffe0d3;
+    --black: var(--black);
+}
+:root {
+
+    --poppins: 'Poppins', san-serif;
+  
+    --lato: 'Lato', san-serif;
+  
+    --raleway: 'Raleway', san-serif;
+  
+    --roboto: 'Roboto', san-serif;
+  
+    --montserrat: 'Montserrat', san-serif;
+  
+    --merriweather: 'Merriweather', san-serif;
+  
+  
+    --armygreen: #0f2a1d;
+    --leafgreen: #375534;
+    --sagegreen: #6b9071;
+    --bggrey: #aec3b0;
+    --creamgreen: #e3eed4;
+  
+  
+  
+    --light: #D3D3D3;
+  
+    --white: #fff;
+  
+    --black: #000000;
+  
+    --green: #228B22;
+  
+    --darkgreen: #013220;
+  
+    --lightgreen: #acd8a7;
+  
+    --palegreen: #D9E6D9;
+  
+    --lightgreengray: #C2D9C2;
+  
+    --mutedgreen: #C8D6C8;
+  
+    --sage: #bcecac;
+  
+    --blue: #00b4d8;
+  
+    --lightblue:#add8e6;
+  
+    --grey: #eee;
+  
+    --medgrey: #D7D7D7;
+  
+    --lightgrey: #F5F5F5;
+  
+    --dark-grey: #aaaaaa;
+  
+    --dark: #342e37;
+  
+    --red: #db5040;
+  
+    --light-red: #ffa0a0;
+  
+    --yellow: #ffce26;
+  
+    --light-yellow: #fff2c6;
+  
+    --orange: #fd7238;
+  
+    --light-orange: #ffe0d3;
+  
+    --black: var(--black);
+  
+  }
+
+body {
+    background-color: var(--bggrey);
+    background: url(../img/aboutusbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-position: auto;
+}
+
+.container {
+    display: flex;
+    margin: 50px 10px;
+}
+
+.profile {
+    flex: 1;
+    margin-right: 10px;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    height: max-content;
+}
+
+.profile-header {
+    display: flex;
+    margin-left: 15px;
+}
+
+.profile-img {
+    width: auto;
+    height: 60px;
+    border-radius: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+.profile-text-container {
+line-height: 0.5;
+}
+
+.profile-title1 {
+    font-family: var(--poppins);
+    font-size: 20px;
+
+}
+
+.profile-title {
+    font-family: var(--poppins);
+    font-size: 20px;
+}
+
+.profile-email {
+    font-family: var(--poppins);
+    font-size: 14px;
+}
+
+.menu {
+    margin: 0 20px;
+}
+
+.menu-link {
+    display: block;
+    text-decoration: none;
+    color: var(--light);
+    font-family: var(--poppins);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.menu-link:first-child {
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.menu-link:hover {
+    background-color: var(--grey);
+    color: var(--dark);
+}
+
+.menu-link:first-child:hover {
+    background-color:var(--green);
+    color: var(--white);
+}
+
+.account {
+    flex: 2;
+    margin-left: 10px;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    height: max-content;
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--dark);
+}
+
+.account-title {
+    font-family: var(--poppins);
+    font-size: 20px;
+    color: var(--dark);
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.btn-container {
+    margin-right: 5px;
+}
+
+.btn-cancel {
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid var(--light);
+    border-radius: 2em;
+    color: var(--dark);
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: var(--white);
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.btn-cancel:hover {
+    background-color: var(--palegreen);
+}
+
+.btn-save {
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid var(--darkgreen);
+    border-radius: 2em;
+    color: var(--white);
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: var(--midgreen);
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.btn-save:hover {
+    background-color: var(--green);
+}
+
+.account-edit {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.input-container label {
+    font-family: var(--poppins);
+    color: var(--dark-grey);
+    font-size: 14px;
+}
+
+.input-container input {
+    height: 25px;
+    border: 1.5px solid var(--light);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--black);
+    font-family: var(--poppins);
+}
+
+.input-container input:focus {
+    outline: none;
+    border: 1.5px solid var(--green);
+}
+
+.input-container textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border: 1.5px solid var(--dark-grey);
+    border-radius: 5px;
+    font-family: var(--poppins);
+    color: var(--light);
+}
+
+.input-container textarea:focus {
+    outline: none;
+    border: 1.5px solid var(--green);
+}
+
+
+/*for container clock*/
+.clock {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-family: var(--poppins);
+    color: var(--dark);
+    /* Add your desired styles here, such as: */
+    background-color: var(--white); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+/* Viewports*/
+
+@media screen and (max-width: 768px){
+    .container {
+        flex-direction: column;        
+    }
+
+    .profile {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .account {
+        margin: 0;
+    }
+
+    .account-header {
+        flex-direction: column;
+    }
+
+    .account-edit {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .input-container {
+        margin: 10px;   
+    }
+
+    .input-container textarea {
+        display: block;
+        width: auto;
+        margin-right: 10px;
+    }
+}

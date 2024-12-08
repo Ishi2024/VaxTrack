@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: var(--poppins), sans-serif;
+
+}
+
+
+:root {
+
+    --poppins: 'Poppins', san-serif;
+
+    --lato: 'Lato', san-serif;
+
+    --raleway: 'Raleway', san-serif;
+
+    --roboto: 'Roboto', san-serif;
+
+    --montserrat: 'Montserrat', san-serif;
+
+    --merriweather: 'Merriweather', san-serif;
+
+
+    --armygreen: #0f2a1d;
+    --leafgreen: #375534;
+    --sagegreen: #6b9071;
+    --bggrey: #aec3b0;
+    --creamgreen: #e3eed4;
+
+
+
+    --light: #D3D3D3;
+
+    --white: #fff;
+
+    --black: #000000;
+
+    --green: #228B22;
+
+    --darkgreen: #013220;
+
+    --lightgreen: #acd8a7;
+
+    --palegreen: #D9E6D9;
+
+    --lightgreengray: #C2D9C2;
+
+    --mutedgreen: #C8D6C8;
+
+    --sage: #bcecac;
+
+    --blue: #00b4d8;
+
+    --lightblue:#add8e6;
+
+    --grey: #eee;
+
+    --medgrey: #D7D7D7;
+
+    --lightgrey: #F5F5F5;
+
+    --dark-grey: #aaaaaa;
+
+    --dark: #342e37;
+
+    --red: #db5040;
+
+    --light-red: #ffa0a0;
+
+    --yellow: #ffce26;
+
+    --light-yellow: #fff2c6;
+
+    --orange: #fd7238;
+
+    --light-orange: #ffe0d3;
+
+    --black: var(--black);
+
+}
+
+
+body {
+
+    background-color: var(--bggrey); /* Dark gray background */
+
+    background-image: url(img/bglogin5.jpg);
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+    background-blend-mode: multiply;
+
+    background-position: auto;
+
+  }
+
+
+  /* logos*/
+
+
+  .logo {
+
+    width: 50px; /* Adjust the width as needed */
+
+    height: auto;
+
+    margin-right: 10px; /* Adjust the margin as needed */
+
+}
+
+
+/* about us container */
+
+
+.text {
+
+    text-align: center;
+
+  }
+
+
+.logo1 {
+
+    width: 100px; /* Adjust the width as needed */
+
+    height: auto; /* Maintain aspect ratio */
+
+  }
+
+
+.container {
+
+    background: var(--white);
+
+    width: 450px;
+
+    padding: 1.5rem;
+
+    margin: 50px auto;
+
+    border-radius: 10px;
+
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.9);
+
+    font-size: small;
+
+}
+
+.error-message {
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center text within the div */
+    padding: 10px; /* Add some padding */
+    background-color: #f0f0f0; /* Light background for better visibility */
+    border: 1px solid #ccc; /* Add a border for styling */
+}
+
+.input-gender {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.gender-label {
+
+    margin-right: 20px;
+
+}
+
+
+.gender-options {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.gender-options label {
+
+    display: flex;
+
+    align-items: center;
+
+    margin-right: 20px;
+
+}
+
+
+.gender-options input[type="radio"] {
+
+    margin-right: 10px;
+
+}
+
+
+
+
+
+
+form {
+
+    margin: 0 2rem;
+
+}
+
+
+.font-title {
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    padding: 1.3rem;
+
+    margin-bottom: 0.4rem;
+
+}
+
+
+.font-titles {
+
+    font-size: 2.5rem;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    padding: 1.3rem;
+
+    margin-bottom: 0.4rem;
+
+    color: var(--white);
+
+    text-shadow: 2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+
+}
+
+
+input {
+
+    color: inherit;
+
+    width: 100%;
+
+    background-color: transparent;
+
+    border: none;
+
+    border-bottom: 1px solid #757575;
+
+    padding-left: 1.5rem;
+
+    font-size: 15px;
+
+}
+
+
+.input-group {
+
+    padding: 1% 0;
+
+    position: relative;
+
+}
+
+
+.input-group i {
+
+    position: absolute;
+
+    color: var(--black);
+
+}
+
+
+input:focus {
+
+    background-color: transparent;
+
+    outline: transparent;
+
+    border-bottom: 2px solid var(--green);
+
+}
+
+
+input::placeholder {
+
+    color: transparent;
+
+}
+
+
+label {
+
+    color: #757575;
+
+    position: relative;
+
+    left: 1.2em;
+
+    top: -1.3em;
+
+    cursor: auto;
+
+    transition: 0.3s ease all;
+
+}
+
+
+input:focus ~ label,
+
+input:not(:placeholder-shown) ~ label {
+
+    top: -3em;
+
+    color: var(--green);
+
+    font-size: 15px;
+
+}
+
+
+.recover {
+
+    text-align: right;
+
+    font-size: 1rem;
+
+    margin-bottom: 1rem;
+
+}
+
+
+.recover a {
+
+    text-decoration: none;
+
+    color: rgb(34, 139, 34);
+
+}
+
+
+.recover a:hover {
+
+    color: blue;
+
+    text-decoration: underline;
+
+}
+
+
+.btn {
+
+    font-size: 1.1rem;
+
+    padding: 8px 0;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    border: none;
+
+    width: 100%;
+
+    background: rgb(34, 139, 34);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.9s;
+
+}
+
+
+.btn:hover {
+
+    background: #07001f;
+
+}
+
+
+.or {
+
+    font-size: 1.1rem;
+
+    margin-top: 0.5rem;
+
+    text-align: center;
+
+}
+
+
+.icons {
+
+    text-align: center;
+
+}
+
+
+.icons i {
+
+    color: rgb(34, 139, 34);
+
+    padding: 0.8rem 1.5rem; /* Fixed spacing */
+
+    border-radius: 10px;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    border: 2px solid #dfe9f5;
+
+    margin: 0 15px;
+
+    transition: 1s;
+
+}
+
+
+.icons i:hover {
+
+    background: #07001f;
+
+    font-size: 1.6em;
+
+    border: 2px solid rgb(34, 139, 34); /*Forest green color*/
+
+}
+
+
+.links {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    padding: 0 4rem;
+
+    margin-top: 0.9rem;
+
+    font-weight: bold;
+
+}
+
+
+button {
+
+    color: rgb(34, 139, 34);
+
+    border: none;
+
+    background-color: transparent;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+}
+
+
+button:hover {
+
+    text-decoration: underline;
+
+    color: blue;
+
+}

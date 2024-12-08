@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+* {
+    margin: 0 px;
+    padding: 0 px;
+    box-sizing: border-box;
+}
+
+:root {
+    --poppins: 'Poppins', san-serif;
+    --lato: 'Lato', san-serif;
+    --raleway: 'Raleway', san-serif;
+    --roboto: 'Roboto', san-serif;
+    --montserrat: 'Montserrat', san-serif;
+    --merriweather: 'Merriweather', san-serif;
+
+    --light: #D3D3D3;
+    --white: #fff;
+    --black: #000000;
+    --green: #228B22;
+    --darkgreen: #013220;
+    --lightgreen: #acd8a7;
+    --palegreen: #D9E6D9; 
+    --lightgreengray: #C2D9C2;
+    --mutedgreen: #C8D6C8;
+    --sage: #bcecac;
+    --blue: #00b4d8;
+    --lightblue:#add8e6;
+    --grey: #eee;
+    --medgrey: #D7D7D7;
+    --lightgrey: #F5F5F5;
+    --dark-grey: #aaaaaa;
+    --dark: #342e37;
+    --red: #db5040;
+    --light-red: #ffa0a0;
+    --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #fd7238;
+    --light-orange: #ffe0d3;
+    --black: var(--black);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../img/aboutusbg.jpg);
+    background-size: cover; /* Cover the entire background */
+    background-attachment: fixed; /* Fix the background to the viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    font-family: var(--poppins)
+  }
+
+.title h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+    color: var(--white);
+}
+
+.services {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.card {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background-color: var(--palegreen);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: var(--lightgreen);
+    transform: 0.4s ease;
+}
+
+.card .icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.card .h2 {
+    font-size: 28px;
+    color: var(--green);
+    margin-bottom: 20px;
+}
+
+.card .p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: var(--dark-grey);
+}
+
+
+.button {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--grey);
+    background-color: var(--green);
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    background-color: var(--dark-grey);
+    transition: 0.4s ease;
+}
+
+.image {
+    width: auto;
+    height: auto;
+} 
+
+.back-button {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+  }
+  
+  .back-button:hover {
+    background-color: #e0e0e0;
+  }
+
+/* media size */
+
+@media screen and (max-width: 940px){
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
+    }
+}
